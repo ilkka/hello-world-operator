@@ -29,7 +29,10 @@ type TravellerSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of Traveller. Edit Traveller_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	//Foo string `json:"foo,omitempty"`
+
+	Size  int32  `json:"size"`
+	Image string `json:"image"`
 }
 
 // TravellerStatus defines the observed state of Traveller
