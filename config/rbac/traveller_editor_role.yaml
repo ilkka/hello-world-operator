@@ -1,0 +1,24 @@
+# permissions for end users to edit travellers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: traveller-editor-role
+rules:
+- apiGroups:
+  - toys.ilkka.dev
+  resources:
+  - travellers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - toys.ilkka.dev
+  resources:
+  - travellers/status
+  verbs:
+  - get

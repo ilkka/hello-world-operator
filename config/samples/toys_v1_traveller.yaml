@@ -1,0 +1,7 @@
+apiVersion: toys.ilkka.dev/v1
+kind: Traveller
+metadata:
+  name: traveller-sample
+spec:
+  # Add fields here
+  foo: bar

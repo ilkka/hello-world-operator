@@ -2,6 +2,10 @@ domain: ilkka.dev
 layout: go.kubebuilder.io/v2
 projectName: hello-world-operator
 repo: github.com/ilkka/hello-world-operator
+resources:
+- group: toys
+  kind: Traveller
+  version: v1
 version: 3-alpha
 plugins:
   go.sdk.operatorframework.io/v2-alpha: {}
